@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- My style -->
+    <link rel="stylesheet" type="text/css" href="Css/styleblog.css">
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Catamaran:700|EB+Garamond|Oswald:900|Mukta|Padauk|Poppins|Work+Sans" rel="stylesheet">
+    <title>Blog</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 bg-header">
+                    <div class="logo-row">
+                        <h4 class="logo logo-center">
+                            <span class="word1">The</span>
+                            <span class="word2">Matrix</span>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-4 bg-header">
+                    <form class="center-searchbar">
+                        <div class="form-element textfield">
+                            <input class="textfield-search" type="text">
+                        </div>
+                        <div class="form-element submit-btn ">
+                            <input class="textfield-search-button" type="submit" value="Search">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 bg-header">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="show-login-link">Log<span class="style-word-in">in</span>
+                                <div class="show-login-form">
+                                    <form action="/action_page.php">
+                                        <div class="imgcontainer">
+                                            <i class="fas fa-user-tie fa-3x avatar"></i>
+                                        </div>
+                                        <div class="container">
+                                            <label for="uname"><b class="username-style">Username</b></label>
+                                            <input class="input-username username-input" type="text" name="uname" required>
+
+                                            <label for="psw"><b class="password-style">Password</b></label>
+                                            <input class="input-password password-input" type="password" name="psw" required>
+
+                                            <button class="btn-style" type="submit">Login</button>
+                                            <label>
+                                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                                            </label>
+                                        </div>
+                                        <div class="container" style="background-color:#ff9933">
+                                            <button type="button" class="cancelbtn">Cancel</button>
+                                            <span class="psw">Forgot <a class="link-password" href="#">password?</a></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#"><i class="fas fa-phone-square fa-2x fa-center"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 pad">
+                <nav class="navbar navbar-expand-sm navbar-default bg-nav-color" data-toggle="affix">
+                    <div class="container flex-sm-nowrap justify-content-center">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars4" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse text-center" id="navbars4">
+                            <ul class="navbar-nav nav-fill w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text" href="#">Acasa</a>
+                                    <div class="nav-underline">
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-box dropdowm-center" aria-labelledby="navbarDropdown">
+                                        <div class="my-row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 center-text-category">
+                                                        <div class="">
+                                                            <a class="dropdown-item main-item" href="#">Fitness</a>
+                                                            <a class="dropdown-item non-primary" href="#">Cum slabesc?</a>
+                                                            <a class="dropdown-item non-primary" href="#">Tonifiere</a>
+                                                            <a class="dropdown-item non-primary" href="#">HIIT</a>
+                                                            <a class="dropdown-item non-primary" href="#">Sanatate</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 center-text-category">
+                                                        <div class="">
+                                                            <a class="dropdown-item main-item" href="#">Nutritie</a>
+                                                            <a class="dropdown-item non-primary" href="#">Plan alimentatie</a>
+                                                            <a class="dropdown-item non-primary" href="#">Retete</a>
+                                                            <a class="dropdown-item non-primary" href="#">Sfaturi</a>
+                                                            <a class="dropdown-item non-primary" href="#">Nutritie sanatoasa</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 center-text-category">
+                                                        <div class="">
+                                                            <div class="row">
+                                                                <div class="col-md-12 section-article-title">
+                                                                    <a class="dropdown-item main-item" href="#">Articole recente</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12 section-article">
+                                                                    <div class="clearfix">
+                                                                        <img class="img2" src="/Images/gymimage17.jpeg" alt="Pineapple">
+                                                                        <div class="various-article-title">
+                                                                            <a class="main-item-last-category bg-color-links" href="#">Bogat in proteine?</a>
+                                                                        </div>
+                                                                        <div class="various-article-date">
+                                                                            28 Februarie 2019
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12 section-article">
+                                                                    <div class="clearfix">
+                                                                        <img class="img2" src="/Images/gymimage18.jpeg" alt="Pineapple">
+                                                                        <div class="various-article-title">
+                                                                            <a class="main-item-last-category bg-color-links" href="#">Cel mai sarat aliment</a>
+                                                                        </div>
+                                                                        <div class="various-article-date">
+                                                                            4 martie 2019
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12 last-section-article">
+                                                                    <div class="clearfix">
+                                                                        <img class="img2" src="/Images/gymimage19.jpeg" alt="Pineapple">
+                                                                        <div class="various-article-title">
+                                                                            <a class="main-item-last-category bg-color-links" href="#">Scapa de kilogramele in plus</a>
+                                                                        </div>
+                                                                        <div class="various-article-date">
+                                                                            5 mai 2019
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle nav-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Produse
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-box dropdowm-center" aria-labelledby="navbarDropdown">
+                                        <div class="my-row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 section-article">
+                                                        <div class="container-accesories">
+                                                            <img src="/Images/gymimage16.jpeg" alt="Avatar" class="image-accesories">
+                                                            <div class="overlay-img-accesories">
+                                                                <div class="text-accesories"><a class="links-accesories" href="#">Accesorii</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="row">
+                                                            <div class="col-md-6 center-text-category">
+                                                                <div class="">
+                                                                    <a class="dropdown-item main-item" href="#">Pentru el</a>
+                                                                    <a class="dropdown-item non-primary" href="#">Gainere</a>
+                                                                    <a class="dropdown-item non-primary" href="#">Proteine</a>
+                                                                    <a class="dropdown-item non-primary" href="#">Aminoacizi</a>
+                                                                    <a class="dropdown-item non-primary" href="#">Stimulatoare</a>
+                                                                    <a class="dropdown-item non-primary" href="#">Creatina</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 center-text-category">
+                                                                <div class="">
+                                                                    <a class="dropdown-item main-item" href="#">Pentru ea</a>
+                                                                    <a class="dropdown-item non-primary" href="#">Shake-uri proteice</a>
+                                                                    <a class="dropdown-item non-primary" href="#">Grasimi sanatoase</a>
+                                                                    <a class="dropdown-item non-primary" href="#">Control greutate</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-text">
+                                    <a class="nav-link" href="#">Despre</a>
+                                    <div class="nav-underline">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12 title-page">
+                    blog.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 subtitle-page">
+                    Cel mai interesant blog de fitness
+                </div>
+            </div>
+            <div class="row-small">
+                <div class="col-md-6 description-blog-page">
+                    fasfhasfa asfahsfja fsahf hfsa sfhafbasf hsbfafha fasfhasfa asfahsfja fsahf hfsa sfhafbasf hsbfafha fasfhasfa asfahsfja fsahf hfsa sfhafbasf hsbfafha fasfhasfa asfahsfja fsahf hfsa sfhafbasf hsbfafha
+                </div>
+                <div class="col-md-6 description-blog-page">
+                    fasfhasfa asfahsfja fsahf hfsa sfhafbasf hsbfafha fasfhasfa asfahsfja fsahf hfsa sfhafbasf hsbfafha fasfhasfa asfahsfja fsahf hfsa sfhafbasf hsbfafha fasfhasfa asfahsfja fsahf hfsa sfhafbasf hsbfafha
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="container-overlay-bottom">
+                <img src="/Images/gymimage10.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text"><a class="links-color" href="#">Cele mai bune diete recomandate de nutritionisti</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="container-overlay-bottom">
+                <img src="/Images/gymimage11.jpeg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text"><a class="links-color" href="#">Planuri antrenament</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-roww services">
+        <div class="col-md-4 service">
+            <div class="jumbotron card card-block card-style">
+                <div class="title-advice">
+                    AA – Adapteaza-ti alimentatia
+                </div>
+                <p class="description-advice">
+                    Viata noastra e intr-o permanenta schimbare si nu te poti astepta sa mananci carne cu legume cand esti in drumetie pe munte, sa cantaresti portia de carne cand esti la restaurant sau sa nu mananci orez cand esti in Asia. Relaxeaza-te si adapteaza-ti alimentatia daca vrei sa nu o iei razna.
+                </p>
+                <div class="center-things">
+                    <a class="btn btn-advice btn-large" href="#">Citeste mai mult..</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 service">
+            <div class="jumbotron card card-block card-style">
+                <div class="title-advice">Mintea iti controleaza corpul</div>
+                <p class="description-advice">
+                    Mintea este cea care te face sa mananci si a treia bucata de ciocolata chiar daca corpul tau nu o mai cere si acolo se naste determinarea sa faci ceva pentru sanatatea ta. Tot ceea ce sadesti inauntrul gandurilor tale poate fi primul pas catre esecul tau sau poate fi pilonul de sustinere al reusitei tale.
+                </p>
+                <div class="center-things">
+                    <a class="btn btn-advice btn-large" href="#">Citeste mai mult..</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 service">
+            <div class="jumbotron card card-block card-style">
+                <div class="title-advice">Provoaca-ti limitele, nu iti limita provocarile.</div>
+                <p class="description-advice">
+                    Nu te tine inapoi cand vezi ca poti trage mai tare, impinge mai mult sau sari mai sus. Ai incredere ca poti si impinge-ti limitele cat mai departe.
+                </p>
+                <div class="center-things">
+                    <a class="btn btn-advice btn-large btn-center" href="#">Citeste mai mult..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row carousel-space">
+            <div class="col-md-8">
+                <div class="carousel slide" id="carousel-518269">
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" data-target="#carousel-518269">
+                        </li>
+                        <li data-slide-to="1" data-target="#carousel-518269">
+                        </li>
+                        <li data-slide-to="2" data-target="#carousel-518269" class="active">
+                        </li>
+                    </ol>
+                    <div class="carousel-inner carousel-center">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 carousel-image" alt="Carousel Bootstrap First" src="/Images/gymimage12.jpg" style="height: 330px; width: 500px" />
+                            <div class="carousel-caption">
+                                <div class="carousel-item-title carousel-top-text1">
+                                    Abilitatea reprezinta ceea ce esti capabil sa faci. Motivatia determina ce faci. Atitudinea determina cat de bine faci lucrul pe care ti l-ai propus.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 carousel-image" alt="Carousel Bootstrap Second" src="/Images/gymimage13.jpg" style="height: 330px; width: 500px" />
+                            <div class="carousel-caption">
+                                <div class="carousel-item-title carousel-top-text2">
+                                    Schimbarea se produce atunci cand durerea de a ramane la fel este mai mare decat dureare de a te schimba.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 carousel-image" alt="Carousel Bootstrap Third" src="/Images/gymimage14.jpg" style="height: 330px; width: 500px" />
+                            <div class="carousel-caption">
+                                <div class="carousel-item-title carousel-top-text3">
+                                    Sunt 1440 de minute intr-o zi. Foloseste 10 minute ca sa te antrenezi.
+                                </div>
+                            </div>
+                        </div>
+                    </div> <a class="carousel-control-prev" href="#carousel-518269" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-518269" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                </div>
+            </div>
+            <div class="col-md-4 center-text">
+                <a class="awesome-post hover-post " href="#">
+                    <img class="post-popular" src="/Images/gymimage15.jpg">
+                    <div class="post-category">
+                        <div class="popular-category-title">
+                            <span class="popular-title">Nutritie</span>
+                            <span class="popular-date">15 Martie 2019</span>
+                            •
+                            <span class="posting-comments">
+                                <i class="fas fa-comments"></i>
+                                <div class="stylization-comments">3</div>
+                            </span>
+                            <div class="text-post-popular">
+                                5 alimente pe care trebuie sa le consumi pentru a creste in masa musculara
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-6 center-text">
+                    <a class="awesome-post hover-post " href="#">
+                        <img class="post-popular" src="/Images/gymimage15.jpg">
+                        <div class="post-category">
+                            <div class="popular-category-title">
+                                <span class="popular-title">Nutritie</span>
+                                <span class="popular-date">15 Martie 2019</span>
+                                •
+                                <span class="posting-comments">
+                                    <i class="fas fa-comments"></i>
+                                    <div class="stylization-comments">3</div>
+                                </span>
+                                <div class="text-post-popular">
+                                    5 alimente pe care trebuie sa le consumi pentru a creste in masa musculara
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 center-text">
+                    <a class="awesome-post hover-post " href="#">
+                        <img class="post-popular" src="/Images/gymimage15.jpg">
+                        <div class="post-category">
+                            <div class="popular-category-title">
+                                <span class="popular-title">Nutritie</span>
+                                <span class="popular-date">15 Martie 2019</span>
+                                •
+                                <span class="posting-comments">
+                                    <i class="fas fa-comments"></i>
+                                    <div class="stylization-comments">3</div>
+                                </span>
+                                <div class="text-post-popular">
+                                    5 alimente pe care trebuie sa le consumi pentru a creste in masa musculara
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 center-text">
+                    <a class="awesome-post hover-post " href="#">
+                        <img class="post-popular" src="/Images/gymimage15.jpg">
+                        <div class="post-category">
+                            <div class="popular-category-title">
+                                <span class="popular-title">Nutritie</span>
+                                <span class="popular-date">15 Martie 2019</span>
+                                •
+                                <span class="posting-comments">
+                                    <i class="fas fa-comments"></i>
+                                    <div class="stylization-comments">3</div>
+                                </span>
+                                <div class="text-post-popular">
+                                    5 alimente pe care trebuie sa le consumi pentru a creste in masa musculara
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 center-text">
+                    <a class="awesome-post hover-post " href="#">
+                        <img class="post-popular" src="/Images/gymimage15.jpg">
+                        <div class="post-category">
+                            <div class="popular-category-title">
+                                <span class="popular-title">Nutritie</span>
+                                <span class="popular-date">15 Martie 2019</span>
+                                •
+                                <span class="posting-comments">
+                                    <i class="fas fa-comments"></i>
+                                    <div class="stylization-comments">3</div>
+                                </span>
+                                <div class="text-post-popular">
+                                    5 alimente pe care trebuie sa le consumi pentru a creste in masa musculara
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 center-text">
+                    <a class="awesome-post hover-post " href="#">
+                        <img class="post-popular" src="/Images/gymimage15.jpg">
+                        <div class="post-category">
+                            <div class="popular-category-title">
+                                <span class="popular-title">Nutritie</span>
+                                <span class="popular-date">15 Martie 2019</span>
+                                •
+                                <span class="posting-comments">
+                                    <i class="fas fa-comments"></i>
+                                    <div class="stylization-comments">3</div>
+                                </span>
+                                <div class="text-post-popular">
+                                    5 alimente pe care trebuie sa le consumi pentru a creste in masa musculara
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 center-text">
+                    <a class="awesome-post hover-post " href="#">
+                        <img class="post-popular" src="/Images/gymimage15.jpg">
+                        <div class="post-category">
+                            <div class="popular-category-title">
+                                <span class="popular-title">Nutritie</span>
+                                <span class="popular-date">15 Martie 2019</span>
+                                •
+                                <span class="posting-comments">
+                                    <i class="fas fa-comments"></i>
+                                    <div class="stylization-comments">3</div>
+                                </span>
+                                <div class="text-post-popular">
+                                    5 alimente pe care trebuie sa le consumi pentru a creste in masa musculara
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="center-pagination">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pag-blog">
+                        <li class="page-item">
+                            <a class="page-link page-blog-prev" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item page-border"><a class="page-link page-item-link" href="#">1</a></li>
+                        <li class="page-item page-border"><a class="page-link page-item-link" href="#">2</a></li>
+                        <li class="page-item page-border"><a class="page-link page-item-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link page-blog-next" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="category">
+                    <ul class="align-category">
+                        <li class="space-category">
+                            <a class="first-category" href="#">Categorii</a>
+                        </li>
+                        <li class="space-subcategory">
+                            <a class="second-category" href="#">Antrenamente(<span class="number-of-articles">39</span>)</a>
+                        </li>
+                        <li class="space-subcategory">
+                            <a class="second-category" href="#">Evenimente(<span class="number-of-articles">1</span>)</a>
+                        </li>
+                        <li class="space-subcategory">
+                            <a class="second-category" href="#">Interviuri Sportivi(<span class="number-of-articles">5</span>)</a>
+                        </li>
+                        <li class="space-subcategory">
+                            <a class="second-category" href="#">Istoria Culturismului(<span class="number-of-articles">27</span>)</a>
+                        </li>
+                        <li class="space-subcategory">
+                            <a class="second-category" href="#">Nutritie(<span class="number-of-articles">33</span>)</a>
+                        </li>
+                        <li class="space-subcategory">
+                            <a class="second-category" href="#">Retete(<span class="number-of-articles">14</span>)</a>
+                        </li>
+                        <li class="space-subcategory">
+                            <a class="second-category" href="#">Sanatate(<span class="number-of-articles">24</span>)</a>
+                        </li>
+                        <li class="space-subcategory">
+                            <a class="second-category" href="#">Suplimente(<span class="number-of-articles">17</span>)</a>
+                        </li>
+                        <li class="space-subcategory">
+                            <a class="second-category" href="#">Video(<span class="number-of-articles">7</span>)</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="recent-comments">
+                    <div class="text-comments">
+                        Comentarii recente
+                    </div>
+                    <ul class="align-comments">
+                        <li class="space-comments">
+                            <i class="fas fa-comments"></i>
+                            <span class="name-user">Joia Alexandra Stefania</span><span class="user-comment">a comentat la</span>
+                            <a class="link-comments" href="#">Deconstruirea unor preconceptii alimentare</a>
+                        </li>
+                        <li class="space-comments">
+                            <i class="fas fa-comments"></i>
+                            <span class="name-user">Sandu Constantin</span><span class="user-comment">a comentat la</span>
+                            <a class="link-comments" href="#">13 modalitati de a arde grasimea</a>
+                        </li>
+                        <li class="space-comments">
+                            <i class="fas fa-comments"></i>
+                            <span class="name-user">Lefter Andrei</span><span class="user-comment">a comentat la</span>
+                            <a class="link-comments" href="#">Batoane cu fulgi de ciocolata, banane si migdale</a>
+                        </li>
+                        <li class="space-comments">
+                            <i class="fas fa-comments"></i>
+                            <span class="name-user">Ionita Claudiu</span><span class="user-comment">a comentat la</span>
+                            <a class="link-comments" href="#">Bea acest Shake si Construieste Musculatura in Somn!</a>
+                        </li>
+                        <li class="space-comments">
+                            <i class="fas fa-comments"></i>
+                            <span class="name-user">Stefan Teodor</span><span class="user-comment">a comentat la</span>
+                            <a class="link-comments" href="#">Ramat cu Haltera din Aplecat vs. Ramat Traditional cu Bara T</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="articles">
+                    <div class="title-articles">Cele mai cautate articole</div>
+                    <button type="button" class="btn-my btn-primary btn-category btn-color">Alimentatie</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Aminoacizi</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Anii de aur</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Antrenament</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Antrenamente</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Antrenament zilnic</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Bodybuilding</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Culturism</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Desert</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Dieta</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Exercitii</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Fitness</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Anii de aur</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Campion</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Carbohidrati</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Cazeina</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Genuflexiuni</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Gold Whey</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Helcometru</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Istoria Culturismului</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Istorie</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Suplimente</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Istorie</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Metabolism</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Performanta</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Protein 80Plus</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Sportivi</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Sanatate</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Suplimente</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Training</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Vegan Protein</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Weider</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Workout</button>
+                    <button type="button" class="btn-my btn-primary btn-category  btn-color">Zer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 footer-community" style="border-left-width: thick; border-left: 10px solid #ff9933;">
+                    <div class="row">
+                        <div class="col-md-12 section-comunity">
+                            Alatura-te comunitatii noastre
+                        </div>
+                        <div class="col-md-12 subsection-comunity">
+                            Urmareste-ne pentru mai multe informatii
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="">
+                                <a class="footer-icons" href="#"><i class="fab fa-facebook fa-3x align-icons fa-spin"></i></a>
+                                <a class="footer-icons" href="#"><i class="fab fa-twitter fa-3x align-icons fa-spin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 footer-newsletter">
+                    <div class="row-border">
+                        <div class="col-md-6 footer-newsletter-left">
+                            <div class="row">
+                                <div class="col-md-12 section-abonate">
+                                    Aboneaza-te la newsletter-ul nostru
+                                </div>
+                                <div class="col-md-12 subsection-abonate">
+                                    Si primeste cele mai noi informatii
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 footer-newsletter-abonate">
+                            <input class="input-style" type="text" id="fname" name="fname" placeholder="email@domain.com">
+                            <button class="submit-button-abonate align-text-button" type="submit" form="form1" value="Submit">Aboneaza-te</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 footer-community2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="logo-style">
+                                <i class="fas fa-dumbbell fa-2x"></i>
+                                <span class="text-logo">The Matrix Gym</span>
+                            </div>
+                            <div class="text-description-footer">The Matrix Gym a ridicat standardele in materie de fitness si va ofera servicii complete si profesionale la preturi atractive. Personalul calificat si cu vasta experienta in domeniu va sta in permanenta la dispozitie pentru a va indruma spre obtinerea randamentului maxim, eficientizand timpul dumneavoastra.</div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <ul style="list-style-type: none;">
+                                        <div class="border-contet">
+                                            <li class="primary-category">Companie</li>
+                                        </div>
+                                        <li class="elements-category">Termeni si conditii</li>
+                                        <li class="elements-category">Despre noi</li>
+                                        <li class="elements-category">Informatii legale</li>
+                                        <li class="elements-category">Intalneste echipa</li>
+                                        <li class="elements-category">Cariere</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul style="list-style-type: none;">
+                                        <div class="border-contet">
+                                            <li class="primary-category">Ajutor</li>
+                                        </div>
+                                        <li class="elements-category">Suport</li>
+                                        <li class="elements-category">Contul meu</li>
+                                        <li class="elements-category">Intrebari frecvente</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul style="list-style-type: none;">
+                                        <div class="border-contet">
+                                            <li class="primary-category">Social</li>
+                                        </div>
+                                        <li class="elements-category">Facebook</li>
+                                        <li class="elements-category">Instagram</li>
+                                        <li class="elements-category">Twitter</li>
+                                        <li class="elements-category">LinkedIn</li>
+                                        <li class="elements-category">Snapchat</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 section-copyright">
+                    Copyright© 2019 The Matrix Gym.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="message.js"></script>
+</body>
+
+</html>

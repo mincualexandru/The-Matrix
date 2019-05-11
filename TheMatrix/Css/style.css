@@ -1,0 +1,963 @@
+@media only screen and {
+    max-width: 1199px;
+}
+
+    {}
+
+@media only screen and {
+    max-width: 991px;
+}
+
+    {}
+
+@media only screen and {
+    max-width: 767px;
+}
+
+    {}
+
+@media only screen and {
+    max-width: 575px;
+}
+
+    {}
+
+body {
+    background-color: white;
+}
+
+small {
+    color: #333;
+}
+
+.logo {
+    font: 45px 'Arial Narrow', sans-serif;
+    /* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+    color: #fefefe;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+}
+
+/* stuff for both words */
+.logo span {
+    position: relative;
+}
+
+.logo span:before,
+.logo span:after {
+    content: '';
+    position: absolute;
+    border-width: 16px;
+    /* makes a nice, big 64px square */
+    border-style: solid;
+    border-color: transparent;
+    height: 0;
+    z-index: 10;
+}
+
+/* stuff for 1st word */
+.logo .word1 {
+    color: #ff9933;
+    margin-right: -18px;
+    transform: rotateY(180deg);
+    /* using Prefix free */
+    display: inline-block;
+    /* required for transform */
+    z-index: 10;
+    /* stack 1st word on top */
+}
+
+.logo .word1:before {
+    right: -2px;
+    /* would be left, but we flipped the word */
+    top: -3px;
+    border-top-color: black;
+    /* match background color */
+    border-right-color: black;
+    /* would be left, but we flipped the word */
+}
+
+.logo .word1:after {
+    left: 8px;
+    /* would be right, but we flipped the word */
+    bottom: -8px;
+    border-bottom-color: black;
+    border-left-color: black;
+    /* would be right, but we flipped the word */
+}
+
+/* stuff for 2nd word */
+.logo .word2 {
+    z-index: 0;
+    /* stack 2nd word below */
+}
+
+.logo .word2:before {
+    border-top-color: black;
+    border-left-color: black;
+}
+
+.logo .word2:after {
+    right: -12px;
+    bottom: 4px;
+    border-bottom-color: black;
+    border-right-color: black;
+}
+
+.container-box-articles {
+    float: left;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #CFCFC4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-box-about {
+    float: right;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #CFCFC4;
+    margin-top: 10px;
+}
+
+.ct-title {
+    text-align: center;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: black;
+}
+
+.ct-info {
+    text-indent: 20px;
+    color: black;
+
+}
+
+.ct-btn-left {
+    margin-top: 5px;
+    margin-bottom: -5px;
+    float: left;
+    resize: both;
+    overflow: auto;
+}
+
+.ct-btn-right {
+    margin-top: -35px;
+    float: right;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer {
+    background-color: white;
+    float: left;
+    width: 100%;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.wrap {
+    margin: 0 auto;
+    text-align: left;
+    width: 1170px;
+    max-width: 94%;
+    position: relative;
+}
+
+.one-fourth {
+    width: 25%;
+    float: left;
+    display: block;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#info-ctc {
+    color: green !important;
+}
+
+ul#menu li {
+    display: inline;
+    padding-right: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.icn-style {
+    color: #ff9933;
+    padding-right: 5px;
+}
+
+.disp-ctc {
+    width: 10%;
+    float: left;
+    display: inline;
+    padding-top: 12px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+}
+
+.over-img1 {
+    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: auto;
+    position: absolute;
+    background-color: white;
+    opacity: 0.6;
+    top: 15%;
+    left: 8%;
+    font-size: 50px;
+    -ms-transform: rotate(-10deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-10deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+}
+
+.over-img2 {
+    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: auto;
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 8%;
+}
+
+.style-text-title {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+     !important;
+    color: black;
+    font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+
+}
+
+.style-text-stitle {
+    font-family: Futura,
+        Trebuchet MS,
+        Arial,
+        sans-serif;
+     !important;
+    color: white;
+    font-size: 27px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+
+}
+
+.over-img3 {
+    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: auto;
+    position: absolute;
+    color: white;
+    top: 33%;
+    left: 17%;
+}
+
+.style-text-cont {
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+     !important;
+    color: black;
+    font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+
+}
+
+
+.btn-lg {
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+
+@import "compass/css3";
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item1 {
+    background-color: #e7e7e7;
+    width: 40%;
+    height: 40%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #1F262A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-indent: 10px;
+    padding: 10px;
+}
+
+.flex-item2 {
+    background-color: #e7e7e7;
+    width: 40%;
+    height: 40%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #1F262A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-indent: 10px;
+    padding: 25px;
+}
+
+.flex-item3 {
+    background-color: #e7e7e7;
+    width: 20%;
+    height: 800px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #1F262A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-indent: 10px;
+}
+
+.flex-item4 {
+    background-color: #e7e7e7;
+    width: 30%;
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #1F262A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-indent: 10px;
+    padding: 25px;
+}
+
+.flex-item5 {
+    background-color: #e7e7e7;
+    width: 30%;
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #1F262A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-indent: 10px;
+    padding: 25px;
+}
+
+.flex-item6 {
+    background-color: #e7e7e7;
+    width: 100%;
+    height: 400px;
+    color: #1F262A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-indent: 10px;
+    padding: 25px;
+}
+
+.box {
+    position: relative;
+}
+
+.box-stuff {
+    background-color: #A9A9A9;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 645px;
+    bottom: 100px;
+}
+
+.box-stuff2 {
+    background-color: #A9A9A9;
+    width: 570px;
+    height: 300px;
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.grid2x2 > div {
+    display: flex;
+    flex-basis: calc(60% - 40px);
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid2x2 > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.box1,
+.box2 {
+    background-color: red;
+    border: 2px solid white;
+}
+
+.map {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.author {
+    color: #1F262A;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.shape {
+    height: 80px;
+    width: 130px;
+    background-color: #ff9933;
+    border-radius: 50%;
+    position: relative;
+}
+
+.shape-text {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: 34%;
+    left: 17%;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.shape-text:hover {
+    color: white;
+    background-color: black;
+}
+
+.news-header {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    -ms-transform: rotate(-10deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-10deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+
+}
+
+.news-header:hover {
+
+    background-color: black;
+    color: white;
+    -ms-transform: rotate(-10deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-10deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+}
+
+.news-info {
+    color: black;
+    font-family: 'Lalezar',
+        cursive;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.news-info:hover {
+    color: white;
+}
+
+.links {
+    color: black;
+    font-weight: bold;
+}
+
+.links:hover {
+    color: white;
+}
+
+.date {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.news-desc {
+    font-size: 15px;
+    color: #202020;
+    font-family: 'Anton', sans-serif;
+    text-align: left;
+    text-indent: 30px;
+
+}
+
+.read-more {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+.read-more:hover {
+    color: white;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: #555;
+    border-radius: 50%;
+    margin: auto;
+    opacity: 0.8;
+}
+
+.circle:hover {
+    background-color: #ff9933;
+}
+
+.center {
+    padding-top: 30px;
+    padding-right: 17px;
+}
+
+.center2 {
+    padding-top: 30px;
+    padding-left: 35px;
+}
+
+.produs {
+    color: black;
+    background-color: #ff9933;
+    width: auto;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+div.gallery {
+    margin-top: 10px;
+    margin-right: 15px;
+    float: left;
+    width: 160px;
+}
+
+div.gallery:hover {
+    -ms-transform: rotate(-10deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-10deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+}
+
+div.gallery img {
+    width: 100%;
+    height: 150%;
+}
+
+.pos {
+    position: relative;
+}
+
+.for-man {
+    position: absolute;
+    border: 2px solid black;
+    color: black;
+    margin-top: 160px;
+    margin-left: 50px;
+    width: 38%;
+    background-color: #555;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.for-man:hover {
+    background-color: #ff9933;
+}
+
+.for-woman {
+    position: absolute;
+    border: 2px solid black;
+    color: black;
+    margin-top: 160px;
+    margin-left: 182px;
+    background-color: #555;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.for-woman:hover {
+    background-color: #ff9933;
+}
+
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 50%;
+}
+
+.reducere-titlu {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Viga', sans-serif;
+}
+
+.reducere-descriere {
+    text-indent: 20px;
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+}
+
+.cod {
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    font-size: 10px;
+}
+
+.cod:hover {
+    color: white;
+}
+
+.blog {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Viga', sans-serif;
+}
+
+.blog-descriere {
+    margin: auto;
+    width: 70%;
+    border: 3px solid black;
+    padding: 10px;
+    font-family: 'Viga', sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 400px;
+}
+
+/* Slides */
+.mySlides {
+    width: auto;
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    width: 50%;
+    margin-left: 100px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: cornflowerblue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #ff9933;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 100px;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 1px solid black;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: #ff9933;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: black;
+    color: white;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+    background-color: #555;
+}
+
+.right {
+    float: right;
+    margin-top: -465px;
+    margin-right: 100px;
+    width: 400px;
+    border: 3px solid #73AD21;
+    height: 465px;
+}
+
+.right1 {
+    float: right;
+    margin-top: 900px;
+    margin-right: 500px;
+    width: 400px;
+    border: 3px solid #73AD21;
+    height: 465px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ff9933;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.8;
+    box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+.img1 {
+    width: 50%;
+    margin: 1px auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: block;
+    opacity: 0.6;
+}
+
+.containerr {
+    position: relative;
+    font-family: Arial;
+}
+
+.text-blockk {
+    position: absolute;
+    bottom: 215px;
+    right: 550px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
